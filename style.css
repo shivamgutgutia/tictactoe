@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Comic Sans MS';
-    src: url("comic-sans-ms/comici.ttf");
-}
+
 
 td {
     border: 2px solid  #333;
@@ -9,7 +6,7 @@ td {
     width: 100px;
     text-align: center;
     vertical-align: middle;
-    font-family: "Comic Sans MS",cursive,sans-serif;
+    font-family: "Arial",cursive,sans-serif;
     font-size: 70px;
     cursor:pointer;
 }

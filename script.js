@@ -39,15 +39,15 @@ function displayMessage(who){
 function endGame(board){
     
     if(winStatus(board,human)){
-        displayMessage(human)
+        displayMessage(human+" Wins")
         return true
     }
     if(winStatus(board,ai)){
-        displayMessage(ai)
+        displayMessage(ai+" Wins")
         return true
     }
     if(tieStatus(board)){
-        displayMessage("TIE")
+        displayMessage("Tie Game")
         return true
     }
     return false
@@ -61,7 +61,6 @@ function playMove(square){
     cells[squareId].removeEventListener("click",playMove,false)
     if(endGame(board)) return
     const aiSquareId = minimax(board,Number.NEGATIVE_INFINITY,Number.POSITIVE_INFINITY,true).move
-    console.log(aiSquareId)
     board[aiSquareId]=ai
     cells[aiSquareId].removeEventListener("click",playMove,false)
     cells[aiSquareId].innerText = ai
