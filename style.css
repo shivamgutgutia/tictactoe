@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url("comic-sans-ms/comici.ttf");
+}
+
 td {
     border: 2px solid  #333;
     height: 100px;
