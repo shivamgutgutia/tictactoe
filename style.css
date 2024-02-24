@@ -1,53 +1,64 @@
-
-
-td {
-    border: 2px solid  #333;
-    height: 100px;
-    width: 100px;
-    text-align: center;
-    vertical-align: middle;
-    font-family: "Arial",cursive,sans-serif;
-    font-size: 70px;
-    cursor:pointer;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-table{
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+table {
     border-collapse: collapse;
-    position: absolute;
-    left:50%;
-    margin-left: -155px;
-    top:50px;
+    margin-top: 20px;
 }
 
-table tr:first-child td{
-    border-top: 0;
-}
-
-table tr:last-child td{
-    border-bottom: 0;
-}
-
-table tr td:first-child{
-    border-left: 0;
-}
-
-table tr td:last-child{
-    border-right: 0;
-}
-
-.endgame{
-    display: none;
-    width: 200px;
-    top: 120px;
-    background-color: red;
-    position: absolute;
-    left: 50%;
-    margin-left: -100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.cell {
+    width: 80px;
+    height: 80px;
     text-align: center;
-    border-radius: 5px;
-    color: white;
-    font-size: 2em; 
+    font-size: 24px;
+    border: 2px solid #ccc;
+    cursor: pointer;
 }
 
+.endgame {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.endgame .text {
+    font-size: 18px;
+    color: #333;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
